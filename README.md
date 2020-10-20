@@ -34,25 +34,26 @@ tf-aws-vpc-experimental:
 Terrafile config file in current directory and modules exported to ./vendor/modules
 ```sh
 $ terrafile
-INFO[0000] [*] Checking out v1.46.0 of git@github.com:terraform-aws-modules/terraform-aws-vpc  
-INFO[0000] [*] Checking out master of git@github.com:terraform-aws-modules/terraform-aws-vpc  
+INFO[0000] [*] Checking out v1.46.0 of git@github.com:terraform-aws-modules/terraform-aws-vpc
+INFO[0000] [*] Checking out master of git@github.com:terraform-aws-modules/terraform-aws-vpc
 ```
 
 Terrafile config file in custom directory
 ```sh
 $ terrafile -f config/Terrafile
-INFO[0000] [*] Checking out v1.46.0 of git@github.com:terraform-aws-modules/terraform-aws-vpc  
-INFO[0000] [*] Checking out master of git@github.com:terraform-aws-modules/terraform-aws-vpc  
+INFO[0000] [*] Checking out v1.46.0 of git@github.com:terraform-aws-modules/terraform-aws-vpc
+INFO[0000] [*] Checking out master of git@github.com:terraform-aws-modules/terraform-aws-vpc
 ```
 
 Terraform modules exported to custom directory
 ```sh
 $ terrafile -p custom_directory
-INFO[0000] [*] Checking out master of git@github.com:terraform-aws-modules/terraform-aws-vpc  
-INFO[0001] [*] Checking out v1.46.0 of git@github.com:terraform-aws-modules/terraform-aws-vpc  
+INFO[0000] [*] Checking out master of git@github.com:terraform-aws-modules/terraform-aws-vpc
+INFO[0001] [*] Checking out v1.46.0 of git@github.com:terraform-aws-modules/terraform-aws-vpc
 ```
 
 ## TODO
+* Add functionality to support Terraform within a sub directory of a git repository
 * Break out the main logic into seperate commands (e.g. version, help, run)
 * Update tests to include unit tests for broken out commands
 * Add coverage tool and badge
